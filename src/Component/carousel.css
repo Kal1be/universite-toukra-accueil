@@ -1,0 +1,112 @@
+.carousel-item{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) !important;
+}
+.carousel-item img{
+    height: 700px;
+    object-fit: cover;
+}
+
+#carouselExampleAutoplaying .carousel-item:before {
+    content: '';
+    display: block;
+    position: absolute;
+    padding: 0 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, .7));
+    width: 100vw;
+    top: 0;
+    height: 700px;
+  }
+  #btn button{
+    position: absolute;
+    top: 50%;
+    width: 3%;
+    height: 5%;
+    padding: 2px;
+    border-radius: 50%;
+    border: 1px solid white;
+    object-fit: cover;
+    font-size: 18px;
+    margin: 0 30px;
+    font-weight: bold !important;
+  }
+  #btn button:hover{
+    background-color: rgb(4, 76, 231);
+    color: white !important;
+    border: 1px solid rgb(4, 76, 231);
+  }
+  #carousel-caption{
+    position: absolute;
+    top: 35%;
+  }
+  #carousel-caption h3{
+    font-family: "Oswald";
+    padding: 0%;
+    font-size: 70px;
+    overflow: hidden;
+    font-weight: bold;
+  }
+  #carousel-caption p{
+    font-size: 25px;
+  }
+  #carousel-caption button{
+    background-color: transparent;
+    border: 1px solid white;
+ color: white;
+ font-size: 22px;
+ padding: 12px 15px;
+ border-radius: 20px;
+ font-weight: bold;
+ transition: .5s linear;
+  }
+  #carousel-caption button:hover{
+    background-color: rgb(8, 61, 206);
+    border: 1px solid rgb(8, 61, 206) ;
+  }
+  
+@media(max-width:850px){
+    .carousel-item img{
+        height: 500px;
+        object-fit: cover;
+    }
+    #carouselExampleAutoplaying .carousel-item:before {
+        content: '';
+        display: block;
+        position: absolute;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, .7));
+        width: 100vw;
+        top: 0;
+        height: 500px;
+      }
+      #btn button{
+        position: absolute;
+        top: 70%;
+        width: 9%;
+        height: 7%;
+        padding: 2px;
+        border-radius: 50%;
+        border: 1px solid white;
+        object-fit: cover;
+        font-size: 17px;
+        margin: 0 15px;
+      }
+
+      #carousel-caption h3{
+        font-family: "Oswald";
+        padding: 0%;
+        font-size: 26px;
+        overflow: hidden;
+        font-weight: bold;
+      }
+      #carousel-caption p{
+        font-size: 17px;
+      }
+      #carousel-caption button{
+        background-color: transparent;
+        border: 1px solid white;
+     color: white;
+     font-size: 20px;
+     padding: 6px 12px;
+     border-radius: 20px;
+     font-weight: bold;
+      }
+}

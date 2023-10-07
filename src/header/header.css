@@ -1,0 +1,41 @@
+/* ***********************the header container****************************** */
+#container{
+    padding: 10px 10px;
+}
+#row div{
+  font-size: 21px;
+  color: gray;
+  margin: 0 5px;
+  cursor: pointer;
+} 
+#row div:nth-child(2){
+    border-left: 2px solid gray;
+    padding: 0 8px;
+}
+#row div:hover{
+    color: blue;
+}
+#end{
+    width:170px !important;
+    display: flex !important;
+    margin: auto;
+}
+.modal-body{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    
+}
+
+@media(max-width:850px){
+    #row div:nth-child(2){
+        border-left: none;
+        padding: 0 8px;
+    }
+   .row #row{
+        margin: 6px 0;
+      } 
+
+}
